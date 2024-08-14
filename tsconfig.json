@@ -1,11 +1,12 @@
 {
-  "extends": "@sindresorhus/tsconfig",
+ 
   "compilerOptions": {
     "noUnusedLocals": false,
-    "module": "commonjs",
-    "outDir": "build",
+    "module": "Node16",
+    "outDir": "dist",
     "resolveJsonModule": true,
     "noUnusedParameters": false,
     "noImplicitAny": false
-  }
+  },
+  "include": ["./source/**/*.ts"]
 }

@@ -12,10 +12,25 @@ class Contact {
 class ContactsCollection {
   data: Contact[]=[];
 load(){
-const resultado = jsonfile.readFileSync("constacts.json");
+const archivo = jsonfile.readFileSync("constacts.json");
+   this.data = archivo;
 
 }
+getAll(){
+  return this.data;
+}
+addOne(contact:Contact)
+{
+this.data.push(contact);
 
+}
+save(){
+  jsonfile.writeFileSync("/constacts.json", this.data);
+}
+getOneById(id){
+  const ContactoEncontrado = this.data.find((contacto)=> contacto.id == id);
+return ContactoEncontrado;
 
+}
 }
 export { ContactsCollection };

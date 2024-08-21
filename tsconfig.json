@@ -1,12 +1,13 @@
 {
  
   "compilerOptions": {
-    "noUnusedLocals": false,
-    "module": "Node16",
-    "outDir": "dist",
+    
+    "moduleResolution": "node",
+    "target":"ESNext",
+    "outDir": "/build",
     "resolveJsonModule": true,
     "noUnusedParameters": false,
     "noImplicitAny": false
   },
-  "include": ["./source/**/*.ts"]
+
 }

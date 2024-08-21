@@ -9,9 +9,9 @@ function parseaParams(argv): ContactsControllerOptions {
 }
 
 function main() {
-let Ccll= new ContactsCollection();
+let ccl= new ContactsCollection();
 
-const resultado = Ccll.load()
+const resultado = ccl.load()
 console.log(resultado);
 
 }

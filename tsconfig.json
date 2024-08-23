@@ -1,8 +1,8 @@
 {
- 
+ "extends": "@sindresorhus/tsconfig",
   "compilerOptions": {
-    
-    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "module": "Node16",
     "target":"ESNext",
     "outDir": "/build",
     "resolveJsonModule": true,
@@ -10,4 +10,5 @@
     "noImplicitAny": false
   },
 
+  
 }

@@ -28,9 +28,9 @@ save(){
   jsonfile.writeFileSync("/constacts.json", this.data);
 }
 getOneById(id){
-  const ContactoEncontrado = this.data.find((contacto)=> contacto.id == id);
-return ContactoEncontrado;
+  const ContactoEncontrado = this.data.find((contacto)=> contacto.id == id)
 
+return ContactoEncontrado;
 }
 }
 export { ContactsCollection };

@@ -3,7 +3,7 @@
   "description": "Basic example for AVA with TypeScript",
   "scripts": {
     "test": "ava",
-    "starts": "ts-node index.ts"
+    "start": "ts-node index.ts"
   },
   "devDependencies": {
     "@ava/typescript": "^5.0.0",
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "jsonfile": "^6.1.0",
+    "minimist": "^1.2.8",
     "rimraf": "^6.0.1"
   },
   "version": "1.0.0",
